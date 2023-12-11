@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+
+def binary_to_decimal(binary):
+    stack = []
+    decimal = 0
+    power = 0
+
+    #Push each bit of the binary number onto the stack
+    for bit in binary:
+        stack.append(int(bit))
+
+    #Process the bits from right to left
+    while stack:
+        bit = stack.pop()
+        decimal += bit * (2 ** power)
+        power += 1
+
+  
+
